@@ -13,12 +13,40 @@
 <body>
     <main>
         <div class="resume">
-            <divc class="incomes">
+            <div class="incomes">
                 Entry: $
                 <span class="incomes">0.00</span>
             </div>
+            <div>
+                Output: $
+                <span class="expenses">0.00</span>
+            </div>
+            <div>
+                Total: $
+                <span class="total">0.00</span>
+            </div>
+        </div>
+            <div class="newItem">
+                <div class="divDesc">
+                    <label for="desc">Description</label>
+                    <input type="text" id="desc">
+                </div>
+            
+            <div class="divAmount">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount">
+            </div>
+            <div class="divType">
+                <label for="type">Type</label>
+                <select id="type">
+                    <option>Entry</option>
+                    <option>Output</option>
+                </select>
+            </div>
+            <button id="btnNew">Add</button>
         </div>
     </main>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
