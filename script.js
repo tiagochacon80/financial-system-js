@@ -36,7 +36,7 @@ function deleteItem(index) {
 }
 
 function insertItem(item, index) {
-    let tr = document.createElement("tr");
+  let tr = document.createElement("tr");
 
   tr.innerHTML = `
     <td>${item.desc}</td>
@@ -47,11 +47,13 @@ function insertItem(item, index) {
         : '<i class="bx bxs-chevron-down-circle"></i>'
     }</td>
     <td class="columnAction">
-        <button onclick="deleteItem(${index})"><i class='bx bx-trash></i></button>
+      <button onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button>
     </td>
   `;
+
   tbody.appendChild(tr);
 }
+
 function loadItens() {
     items = getItensBD();
     tbody.innerHTML = "";
